@@ -8,7 +8,7 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const slowDown = require('express-slow-down');
 
-require("dotenv").config();
+
 
 var indexRouter = require('./routes/index');
 
