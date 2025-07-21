@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  include home/header.pug
+  include home/about_us.pug 
+  include home/request.pug
+  include home/bottom.pug
+
+
+
+  if Message
+    script.
+      alert("#{Message}")
+      window.location.href = "/"

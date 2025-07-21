@@ -1,0 +1,27 @@
+extends ../layout.pug
+
+block content 
+    h1(class="services" id="service") Using the service
+    .request
+        .container 
+            .row 
+                form(action="/" method="POST")
+                    .input 
+                        label(for="title") Please enter the title of your project:
+                        input(name="title" maxlength="50" id = "title" type="text" placeholder="Type here" required) 
+                    .input 
+                        label(for="service") What kind of service would you like: 
+                        select(name="service" id="service")
+                            option(value="website")   WebSite 
+                            option(value="telegrambot") Telegram Bot
+                    .input 
+                        label(for="email") Please enter your email: 
+                        input(type="email" name="email" id="email" placeholder="E-mail" required)
+                    .input 
+                        label(for="tel") Please enter your phone number: 
+                        input(type="tel" name="phone" id="tel" maxlength="50" placeholder="+998 12 345 67 89" required)
+                    .input 
+                        label(for="about") Please provide full details of your request:
+                        input(type="text" maxlength="500" id="about" name="about" placeholder="Type here" required) 
+                    .submit 
+                        button(type="submit") send

@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+::-webkit-scrollbar{
+  transition: 0.3s ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------ HEADER ------------------------------ */
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+.header .container .row a {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container .row h1 {
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.header .container .row h1:hover {
+  color: blue
+}
+
+.header .container .row .icons {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  align-items: center;
+}
+
+.header .container .row .icons a {
+  width: auto;
+  display: block;
+  font-size: 30px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.header .container .row .icons a:hover {
+  color: blue;
+}
+
+/* ------------------------------ About US ------------------------------ */
+.about_us{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about_us .container .row{
+  align-items: center;
+}
+.about_us .container .row .img{
+  width: 35%;
+  height: 500px;
+}
+.about_us .container .row .img img{
+  width: 100%;
+  height: 100%;
+}
+.about_us .container .row .texts {
+  width: 65%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 30px;
+}
+.about_us .container .row .texts h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+
+.about_us .container .row .texts .section p{
+  color: whitesmoke;
+  font-size: 20px;
+}
+.about_us .container .row .texts .section ul li{
+  list-style: circle;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+
+
+/* ------------------------------ Request ------------------------------ */
+.services {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.request {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.request .container .row form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.request .container .row form .input {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.request .container .row form .input label {
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.request .container .row form .input input {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 0.25em;
+  color: black;
+}
+
+.request .container .row form .input select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.request .container .row form .submit {
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.request .container .row form .submit button{
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 0.25em;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.request .container .row form .submit button:hover{
+  background-color: black;
+  color: white;
+}
+
+/* ------------------------------ CopyRight ------------------------------ */
+.copyright {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+}
+
+.copyright p {
+  color: white;
+  font-size: 20px;
+}
+
+
+
+/* ------------------------------ Bottom ------------------------------ */
+.bottom {
+  width: 100%; 
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.87); */
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bottom .container .row {
+  justify-content: space-between;
+}
+.bottom .container .row ul{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.bottom .container .row ul li a{
+  color: whitesmoke;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.bottom .container .row ul li a:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.bottom .container .row .contact {
+  display: flex;
+  width: 40.6%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bottom .container .row .contact h3{
+  width: 100%;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+.bottom .container .row .contact ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bottom .container .row .contact ul li {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bottom .container .row .contact ul li a {
+  font-size: 30px;
+  color: white;
+  transition: 0.3s ease;
+}
+.bottom .container .row .contact ul li a:hover{
+  color: blue;
+}
+
+.bottom .container .row .short_information {
+  width: 40.6%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: whitesmoke;
+}
+.bottom .container .row .short_information h3{
+  width: 100%;
+  font-size: 25px;
+}
+
+/* ------------------------------ CSS for small screens ------------------------------ */
+@media only screen and (max-width: 425px) {
+  /* Header */
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header .container .row{
+    width: 100%;
+  }
+  .header .container .row a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container .row a h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container .row .icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  /* About us */
+  .services{
+    font-size: 30px;
+    justify-content: flex-start;
+  }
+  .about_us .container .row .img{
+    display: none;
+  }
+  .about_us .container .row .texts{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .about_us .container .row .texts h1{
+    font-size: 30px;
+  }
+  /* Services */
+  .request .container .row form .input{
+    width: 100%;
+  }
+  /* Bottom */
+  .bottom .container .row ul{
+    width: 100%;
+    flex-direction: unset;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .bottom .container .row .contact{
+    width: 100%;
+  }
+  .bottom .container .row .short_information {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .copyright {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .copyright p{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .about_us .container .row .img {
+    width: 40%;
+  }
+  .about_us .container .row .texts{
+    width: 60%;
+  }
+  .about_us .container .row .texts h1{
+    font-size: 30px;
+  }
+}
