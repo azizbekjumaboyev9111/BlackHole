@@ -6,9 +6,9 @@ Welcome to **BlackHole** — a creative media company bringing immersive experie
 
 ## 🔗 Official Links
 
-- 🌐 Website: [https://blackhole.uz](https://blackhole.uz)
-- 📸 Instagram: [https://www.instagram.com/blackhole_media](https://www.instagram.com/black_hole_uzbekistan/)
-- 📣 Telegram: [https://t.me/blackhole_official](https://t.me/blackholetm)
+- 🌐 Website: [LINK](https://blackhole.uz)
+- 📸 Instagram: [LINK](https://www.instagram.com/black_hole_uzbekistan/)
+- 📣 Telegram: [LINK](https://t.me/blackholetm)
 
 ---
 
