@@ -9,6 +9,7 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^17.2.0",
     "express": "~4.16.1",
     "express-rate-limit": "^8.0.1",
     "express-slow-down": "^2.1.0",
